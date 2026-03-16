@@ -13,7 +13,6 @@ export default function Nav() {
     { path: "/", label: "HOME" },
     { path: "/sobre", label: "SOBRE" },
     { path: "/forca", label: "FORCA 🎮" },
-    { path: "/contato", label: "CONTATO" },
   ];
 
   return (

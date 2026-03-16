@@ -1,10 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-
 export default function HomePage() {
-  const router = useRouter();
-
   return (
     <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "2rem", paddingTop: "64px", position: "relative", overflow: "hidden" }}>
       {[
@@ -76,9 +72,9 @@ export default function HomePage() {
         </p>
 
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-          <button onClick={() => window.open('https://linkedin.com/in/SEU_LINKEDIN_AQUI', '_blank')} style={{
+          <button onClick={() => window.open('https://www.linkedin.com/in/ricardofilipe49/', '_blank')} style={{
             padding: "0.9rem 2rem",
-            background: "linear-gradient(135deg, #0077B5, #005E93)", // Cores do LinkedIn
+            background: "linear-gradient(135deg, #0077B5, #005E93)",
             border: "none", borderRadius: "12px",
             color: "white",
             fontFamily: "'Orbitron', monospace",
@@ -88,19 +84,6 @@ export default function HomePage() {
             boxShadow: "0 0 30px rgba(0, 119, 181, 0.4)",
             transition: "all 0.2s ease",
           }}>MEU LINKEDIN</button>
-          
-          <button onClick={() => router.push("/contato")} style={{
-            padding: "0.9rem 2rem",
-            background: "transparent",
-            border: "1px solid rgba(226,232,240,0.2)",
-            borderRadius: "12px",
-            color: "rgba(226,232,240,0.7)",
-            fontFamily: "'Orbitron', monospace",
-            fontSize: "0.85rem", fontWeight: 700,
-            letterSpacing: "0.1em",
-            cursor: "pointer",
-            transition: "all 0.2s ease",
-          }}>CONTATO</button>
         </div>
       </div>
     </div>
